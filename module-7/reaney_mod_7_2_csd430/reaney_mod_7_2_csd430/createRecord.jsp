@@ -116,6 +116,7 @@
     <% if (dbError != null) { %>
         <p style="color:red;">Error fetching records: <%= dbError %></p>
     <% } else { %>
+    <!-- Create the table -->
         <table>
             <thead>
                 <tr>
@@ -127,6 +128,7 @@
                     <th>Rating</th>
                 </tr>
             </thead>
+            <!-- Pull in the movie rows for the table as built above -->
             <tbody>
                 <%= movieTableRows.toString() %>
             </tbody>
